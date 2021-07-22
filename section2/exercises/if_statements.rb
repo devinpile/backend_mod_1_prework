@@ -11,6 +11,7 @@
   # if it is icy, print "yak traks"
 def weather
   weather = 'sunny'
+end
 
   if weather == 'sunny'
     p "sunscreen"
@@ -40,13 +41,14 @@ end
 
 # Experiment with manipulating the value held within num_quarters
 # to make sure both conditions can be achieved.
+num_quarters = 4
 def quarters
   puts "I have #{num_quarters}!"
-num_quarters = 4
+end
 
   if num_quarters >= 2
     puts "I have enough money for a gumball"
-  elsif num_quarters < 2
+  else num_quarters < 2
     puts "I do not have enough money for a gumball"
 end
 
@@ -66,14 +68,30 @@ end
 
 cups_of_flour = 1
 has_sauce = true
-def ingredients
-  if cups_of_flour == 1 and has_sauce == true
+
+  if cups_of_flour == 1
+  has_sauce == true
     puts "I cannot make pizza"
-  elsif cups_of_flour == 5 and has_sauce == false
+
+  elsif cups_of_flour == 5
+        has_sauce == false
     puts "I cannot make pizza"
-  elsif cups_of_flour == 2 and has_sauce == true
+
+  elsif cups_of_flour == 2
+        has_sauce == true
     puts "I can make pizza"
-  else cups_of_flour == 3 and has_sauce == true
+
+  else cups_of_flour == 3
+        has_sauce == true
     puts "I can make pizza"
-  end
+end
+
+
+
+
+
+if has_sauce ==true && cups_of_flour >= 2
+  puts "I can make a pizza"
+else has_sauce == false && cups_of_flour < 2
+  puts "I cannot make a pizza"
 end

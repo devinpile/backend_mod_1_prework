@@ -28,11 +28,14 @@ using the if , elsif , else syntax
 
 1. Provide an example of the Ruby syntax for an if/elsif/else statement:
 if team1_points > team2_points
+  ```Ruby
+if team1_points > team2_points
   puts "Team 1 Wins!!"
 elsif team1_points < team2_points
   puts "Team 2 Wins!!"
 else team1_points = team2_points
   puts "Actually it was a terrible game..."
+  ```
 
 1. Other than an if-statement, can you think of any other ways we might want to use a conditional statement?
 You can also use conditional statements in Boolean (true/false) to create branches in the same way.
@@ -40,23 +43,30 @@ You can also use conditional statements in Boolean (true/false) to create branch
 ### Methods
 
 1. In your own words, what is the purpose of a method?
-The method groups a  "box" of code together to make it easier to work with.
+The method groups a "box" of code together to perform an action.
 
 1. Create a method named `hello` that will print `"Sam I am"`.
+
+```ruby
 def hello
   print "Sam I am"
 end
-
+```
 1. Create a method named `hello_someone` that takes an argument of `name` and prints `"#{name} I am"`.
+```ruby
 def hello_someone(name)
   Puts "#{name} I am"
 end
+```
 
 1. How would you call or execute the method that you created above?
 def hello_someone(name)
-name = Sam
-  puts = "#{name} I am"
-end
+```ruby
+
+hello_someone("Sam")
+puts = "#{name} I am"
+```
 
 1. What questions do you have about methods in Ruby?
 I know I understand it, but I don't think I'm not doing it correctly yet; I'm sure there's a question in there. I think I just need to come back to this again later. I want to ask a good a question, but I need more grasp.
+So, I came back to this Section after working through the others, and WOW. I now understand Methods. From moving on, then coming back to it, I realized how beneficial it can be to gain more context/expand my understanding.

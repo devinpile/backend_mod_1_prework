@@ -6,7 +6,7 @@ class Student
   end
 
   def favorite_number
-    7
+     favorite_number = 7
   end
 end
 
